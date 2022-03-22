@@ -1,0 +1,14 @@
+<?php
+
+$dao = new Boutique\BdDAO;
+
+
+
+$liste = $dao->getAll();
+
+
+
+foreach($liste->get() as $bd){
+$lien = "<a href='fiche_dao.php?ref=$bd->ref'>voir</a>";
+@$tr .= "<tr><td>$bd->titre</td><td>$lien</td></tr>\n";
+}

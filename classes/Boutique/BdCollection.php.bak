@@ -1,0 +1,15 @@
+<?php
+namespace Boutique;
+
+class BdCollection {
+	public $list = [];
+	
+	function add(Bd $obd) {
+		//on type avec une classe : bd
+		$this->list[] = $obd;
+		print_r($obd);
+	}
+	function get(){
+		return $this->list;
+	}
+}

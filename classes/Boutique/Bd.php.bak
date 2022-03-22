@@ -1,0 +1,12 @@
+<?php
+namespace Boutique;
+
+class Bd{
+	public $ref, $titre, $auteur, $prix, $editeur, $resume;
+	
+	function __construct(Array $tdata){
+		foreach ($tData as $cle=>$val){
+			$this->$cle = $val;
+		}
+	}
+}

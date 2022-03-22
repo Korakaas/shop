@@ -1,0 +1,6 @@
+<?php
+namespace Boutique;
+
+class Bd{
+
+}
